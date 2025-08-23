@@ -108,3 +108,4 @@ const dog11 = new Dog11("Chó");
 const cat11 = new Cat11("Mèo");
 console.log(`${dog11.name} kêu: ${dog11.makeSound()}`);
 console.log(`${cat11.name} kêu: ${cat11.makeSound()}`);
+

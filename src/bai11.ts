@@ -17,6 +17,7 @@ export class Dog extends Animal {
     }
 }
 
+
 export class Cat extends Animal {
     constructor(name: string) {
         super(name);
