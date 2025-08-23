@@ -62,3 +62,16 @@ try {
 catch (error) {
     console.error(`Lỗi khi đổi tên '${user2.getName()}':`, error.message);
 }
+// Bài 8: Product
+const bai8_1 = require("./bai8");
+console.log("\n=== Bài 8: Product ===");
+const products = [
+    new bai8_1.Product("Laptop", 1500),
+    new bai8_1.Product("Mouse", 25),
+    new bai8_1.Product("Keyboard", 75),
+    new bai8_1.Product("Monitor", 300)
+];
+products.forEach(product => product.displayInfo());
+console.log("\nSản phẩm có giá > 100:");
+const filteredProducts = (0, bai8_1.locSanPham)(products);
+filteredProducts.forEach(product => product.displayInfo());

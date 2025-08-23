@@ -69,5 +69,16 @@ try {
     console.error(`Lỗi khi đổi tên '${user2.getName()}':`, (error as Error).message);
 }
 
-
-
+// Bài 8: Product
+import { Product, locSanPham } from './bai8';
+console.log("\n=== Bài 8: Product ===");
+const products: Product[] = [
+    new Product("Laptop", 1500),
+    new Product("Mouse", 25),
+    new Product("Keyboard", 75),
+    new Product("Monitor", 300)
+];
+products.forEach(product => product.displayInfo());
+console.log("\nSản phẩm có giá > 100:");
+const filteredProducts = locSanPham(products);
+filteredProducts.forEach(product => product.displayInfo());
