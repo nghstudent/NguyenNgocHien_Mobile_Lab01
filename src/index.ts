@@ -22,7 +22,7 @@ console.log("\n=== Bài 4: Rectangle ===");
 const rectangle = new Rectangle(10, 5);
 rectangle.displayInfo();
 
-// Bài 5: BankAccoun
+// Bài 5: BankAccount
 import { BankAccount } from './bai5';
 console.log("\n=== Bài 5: BankAccount ===");
 const bankAccount = new BankAccount(1000);
@@ -30,3 +30,9 @@ bankAccount.displayInfo();
 bankAccount.deposit(500);
 bankAccount.withdraw(200);
 bankAccount.displayInfo();
+
+// Bài 6: Book
+import { Book } from './bai6';
+console.log("\n=== Bài 6: Book ===");
+const book = new Book("Dế mèn phiêu lưu ký", "Tô Hoài", 1941);
+book.displayInfo();
