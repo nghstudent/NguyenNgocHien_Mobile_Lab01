@@ -40,5 +40,34 @@ book.displayInfo();
 // Bài 7: User
 import { User } from './bai7';
 console.log("\n=== Bài 7: User ===");
+
 const user = new User("Alice");
+const user2 = new User("Bob");
+
 user.displayInfo();
+user2.displayInfo();
+
+// Trường hợp 1: Đổi tên thành tên hợp lệ
+try {
+    const oldName = user.getName();
+    const newName = "Charlie";
+    user.setName(newName);
+    console.log(`Đổi tên thành công: '${oldName}' -> '${newName}'`);
+    user.displayInfo();
+} catch (error) {
+    console.error("Lỗi:", (error as Error).message);
+}
+
+// Trường hợp 2: Đổi tên thành chuỗi rỗng (lỗi)
+try {
+    const oldName = user2.getName();
+    const newName = "";
+    user2.setName(newName);  // Đây sẽ gây lỗi
+    console.log(`Đổi tên thành công: '${oldName}' -> '${newName}'`);
+    user2.displayInfo();
+} catch (error) {
+    console.error(`Lỗi khi đổi tên '${user2.getName()}':`, (error as Error).message);
+}
+
+
+

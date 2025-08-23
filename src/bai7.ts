@@ -6,6 +6,13 @@ export class User {
     getName(): string {
         return this.name;
     }
+    setName(name: string): void {
+        if (name.trim() === "") {
+            throw new Error("Tên không được rỗng.");
+        }
+        this.name = name;
+    }
+
     displayInfo(): void {
         console.log(`User Name: ${this.name}`);
     }

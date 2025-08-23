@@ -8,6 +8,12 @@ class User {
     getName() {
         return this.name;
     }
+    setName(name) {
+        if (name.trim() === "") {
+            throw new Error("Tên không được rỗng.");
+        }
+        this.name = name;
+    }
     displayInfo() {
         console.log(`User Name: ${this.name}`);
     }
