@@ -33,3 +33,8 @@ const bai6_1 = require("./bai6");
 console.log("\n=== Bài 6: Book ===");
 const book = new bai6_1.Book("Dế mèn phiêu lưu ký", "Tô Hoài", 1941);
 book.displayInfo();
+// Bài 7: User
+const bai7_1 = require("./bai7");
+console.log("\n=== Bài 7: User ===");
+const user = new bai7_1.User("Alice");
+user.displayInfo();

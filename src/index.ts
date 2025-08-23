@@ -36,3 +36,9 @@ import { Book } from './bai6';
 console.log("\n=== Bài 6: Book ===");
 const book = new Book("Dế mèn phiêu lưu ký", "Tô Hoài", 1941);
 book.displayInfo();
+
+// Bài 7: User
+import { User } from './bai7';
+console.log("\n=== Bài 7: User ===");
+const user = new User("Alice");
+user.displayInfo();
