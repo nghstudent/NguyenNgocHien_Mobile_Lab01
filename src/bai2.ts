@@ -8,8 +8,6 @@ export class Student extends Person {
     }
 
     displayInfo(): void {
-        // super.displayInfo();
-        // console.log(`Grade: ${this.grade}`);
-        console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`);
+        console.log(`Tên: ${this.name}, Tuổi: ${this.age}, Lớp: ${this.grade}`);
     }
 }

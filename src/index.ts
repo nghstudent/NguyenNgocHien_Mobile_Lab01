@@ -78,6 +78,7 @@ const products: Product[] = [
     new Product("Keyboard", 75),
     new Product("Monitor", 300)
 ];
+console.log("\nDanh sách sản phẩm:");
 products.forEach(product => product.displayInfo());
 console.log("\nSản phẩm có giá > 100:");
 const filteredProducts = locSanPham(products);

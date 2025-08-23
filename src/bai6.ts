@@ -8,6 +8,6 @@ export class Book {
         this.year = year;
     }
     displayInfo(): void {
-        console.log(`Book Info: "${this.title}" by ${this.author}, published in ${this.year}`);
+        console.log(`Thông tin sách: "${this.title}" của ${this.author}, xuất bản năm ${this.year}`);
     }
 }

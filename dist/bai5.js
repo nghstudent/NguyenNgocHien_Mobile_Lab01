@@ -8,23 +8,23 @@ class BankAccount {
     deposit(amount) {
         if (amount > 0) {
             this.balance += amount;
-            console.log(`Deposited: $${amount}. New balance: $${this.balance}`);
+            console.log(`Đã gửi tiền: $${amount}. Số dư mới: $${this.balance}`);
         }
         else {
-            console.log("Deposit amount must be positive.");
+            console.log("Số tiền gửi phải dương.");
         }
     }
     withdraw(amount) {
         if (amount > 0 && amount <= this.balance) {
             this.balance -= amount;
-            console.log(`Withdrew: $${amount}. New balance: $${this.balance}`);
+            console.log(`Đã rút tiền: $${amount}. Số dư mới: $${this.balance}`);
         }
         else {
-            console.log("Invalid withdrawal amount.");
+            console.log("Số tiền rút không hợp lệ.");
         }
     }
     displayInfo() {
-        console.log(`Balance: $${this.balance}`);
+        console.log(`Số dư: $${this.balance}`);
     }
 }
 exports.BankAccount = BankAccount;

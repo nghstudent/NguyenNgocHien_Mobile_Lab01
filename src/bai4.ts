@@ -15,6 +15,6 @@ export class Rectangle {
         return 2 * (this.width + this.height);
     }
     displayInfo(): void {
-        console.log(`Rectangle: width=${this.width}, height=${this.height}, area=${this.area()}, perimeter=${this.perimeter()}`);
+        console.log(`Hình chữ nhật: chiều rộng=${this.width}, chiều cao=${this.height}, diện tích=${this.area()}, chu vi=${this.perimeter()}`);
     }
 }

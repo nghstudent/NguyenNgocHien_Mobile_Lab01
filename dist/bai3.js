@@ -8,7 +8,7 @@ class Car {
         this.year = year;
     }
     displayInfo() {
-        console.log(`Car Info: ${this.year} ${this.brand} ${this.model}`);
+        console.log(`Thông tin xe: ${this.year} ${this.brand} ${this.model}`);
     }
 }
 exports.Car = Car;

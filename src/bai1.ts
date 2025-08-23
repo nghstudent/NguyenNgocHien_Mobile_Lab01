@@ -15,7 +15,7 @@ class Person{
         return this.age;
     }
     displayInfo(): void{
-        console.log(`Name: ${this.name}, Age: ${this.age}`);
+        console.log(`Tên: ${this.name}, Tuổi: ${this.age}`);
     }
 }
 export {Person};

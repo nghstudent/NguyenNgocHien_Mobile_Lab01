@@ -71,6 +71,7 @@ const products = [
     new bai8_1.Product("Keyboard", 75),
     new bai8_1.Product("Monitor", 300)
 ];
+console.log("\nDanh sách sản phẩm:");
 products.forEach(product => product.displayInfo());
 console.log("\nSản phẩm có giá > 100:");
 const filteredProducts = (0, bai8_1.locSanPham)(products);

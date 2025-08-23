@@ -8,7 +8,7 @@ class Product {
         this.price = price;
     }
     displayInfo() {
-        console.log(`Product Info: ${this.name}, Price: $${this.price.toFixed(2)}`);
+        console.log(`Thông tin sản phẩm: ${this.name}, Giá: $${this.price.toFixed(2)}`);
     }
 }
 exports.Product = Product;

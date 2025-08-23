@@ -14,6 +14,6 @@ export class User {
     }
 
     displayInfo(): void {
-        console.log(`User Name: ${this.name}`);
+        console.log(`Tên: ${this.name}`);
     }
 }
