@@ -79,10 +79,10 @@ filteredProducts.forEach(product => product.displayInfo());
 // Bài 9: Animal
 const bai9_1 = require("./bai9");
 console.log("\n=== Bài 9: Animal ===");
-const dog = new bai9_1.Dog("GauGau");
-const cat = new bai9_1.Cat("Miumiu");
-console.log(`${dog.name} says: ${dog.sound()}`);
-console.log(`${cat.name} says: ${cat.sound()}`);
+const dog = new bai9_1.Dog("Chó");
+const cat = new bai9_1.Cat("Mèo");
+console.log(`${dog.name} kêu: ${dog.sound()}`);
+console.log(`${cat.name} kêu: ${cat.sound()}`);
 // Bài 10: Account
 const bai10_1 = require("./bai10");
 console.log("\n=== Bài 10: Account ===");
@@ -91,3 +91,10 @@ console.log(`Chủ tài khoản: ${account.owner}`);
 account.deposit(300);
 account.withdraw(200);
 console.log(`Số dư hiện tại: $${account.getBalance()}`);
+// Bài 11: Animal
+const bai11_1 = require("./bai11");
+console.log("\n=== Bài 11: Animal ===");
+const dog11 = new bai11_1.Dog("Chó");
+const cat11 = new bai11_1.Cat("Mèo");
+console.log(`${dog11.name} kêu: ${dog11.makeSound()}`);
+console.log(`${cat11.name} kêu: ${cat11.makeSound()}`);

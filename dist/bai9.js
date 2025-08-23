@@ -6,7 +6,7 @@ class Dog {
         this.name = name;
     }
     sound() {
-        return "Woof!";
+        return "Gâu gâu";
     }
 }
 exports.Dog = Dog;
@@ -15,7 +15,7 @@ class Cat {
         this.name = name;
     }
     sound() {
-        return "Meow!";
+        return "Meo meo";
     }
 }
 exports.Cat = Cat;

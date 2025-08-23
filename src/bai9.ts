@@ -11,7 +11,7 @@ export class Dog implements Animal {
     }
 
     sound(): string {
-        return "Woof!";
+        return "Gâu gâu";
     }
 }
 export class Cat implements Animal {
@@ -22,6 +22,6 @@ export class Cat implements Animal {
     }
 
     sound(): string {
-        return "Meow!";
+        return "Meo meo";
     }
 }
