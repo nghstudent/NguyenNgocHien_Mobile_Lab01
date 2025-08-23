@@ -91,3 +91,12 @@ const dog = new Dog("GauGau");
 const cat = new Cat("Miumiu");
 console.log(`${dog.name} says: ${dog.sound()}`);
 console.log(`${cat.name} says: ${cat.sound()}`);
+
+// Bài 10: Account
+import { Account } from './bai10';
+console.log("\n=== Bài 10: Account ===");
+const account = new Account(1, "John Doe", 500);
+console.log(`Chủ tài khoản: ${account.owner}`);
+account.deposit(300);
+account.withdraw(200);
+console.log(`Số dư hiện tại: $${account.getBalance()}`);
