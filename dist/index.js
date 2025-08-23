@@ -75,3 +75,10 @@ products.forEach(product => product.displayInfo());
 console.log("\nSản phẩm có giá > 100:");
 const filteredProducts = (0, bai8_1.locSanPham)(products);
 filteredProducts.forEach(product => product.displayInfo());
+// Bài 9: Animal
+const bai9_1 = require("./bai9");
+console.log("\n=== Bài 9: Animal ===");
+const dog = new bai9_1.Dog("GauGau");
+const cat = new bai9_1.Cat("Miumiu");
+console.log(`${dog.name} says: ${dog.sound()}`);
+console.log(`${cat.name} says: ${cat.sound()}`);

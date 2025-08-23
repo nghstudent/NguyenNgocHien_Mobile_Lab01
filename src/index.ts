@@ -82,3 +82,11 @@ products.forEach(product => product.displayInfo());
 console.log("\nSản phẩm có giá > 100:");
 const filteredProducts = locSanPham(products);
 filteredProducts.forEach(product => product.displayInfo());
+
+// Bài 9: Animal
+import { Animal, Dog, Cat } from './bai9';
+console.log("\n=== Bài 9: Animal ===");
+const dog = new Dog("GauGau");
+const cat = new Cat("Miumiu");
+console.log(`${dog.name} says: ${dog.sound()}`);
+console.log(`${cat.name} says: ${cat.sound()}`);
