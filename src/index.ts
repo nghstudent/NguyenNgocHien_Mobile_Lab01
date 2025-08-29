@@ -249,3 +249,25 @@ console.log("Key:", pair1.getKey(), "Value:", pair1.getValue());
 const pair2 = new GenericPair<number, string>(1, "một");
 console.log("Key:", pair2.getKey(), "Value:", pair2.getValue());
 
+// Bài 25
+import { MyGenericStack } from "./bai25";
+
+console.log("\n=== Bài 25: Generic Stack ===");
+const numberStack2 = new MyGenericStack<number>();
+numberStack2.push(10);
+numberStack2.push(20);
+numberStack2.push(30);
+
+console.log("Phần tử trên cùng:", numberStack2.peek());
+console.log("Pop:", numberStack2.pop());
+console.log("Stack rỗng?", numberStack2.isEmpty());
+
+const stringStack2 = new MyGenericStack<string>();
+stringStack2.push("xin");
+stringStack2.push("chào");
+stringStack2.push("bạn");
+
+console.log("Phần tử trên cùng:", stringStack2.peek());
+console.log("Pop:", stringStack2.pop());
+console.log("Stack rỗng?", stringStack2.isEmpty());
+
