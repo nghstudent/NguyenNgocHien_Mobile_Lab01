@@ -241,3 +241,9 @@ const pair3 = { key: 1, value: "Một" };
 const pair4 = { key: "isAdmin", value: true };
 console.log("Cặp 1:", pair3);
 console.log("Cặp 2:", pair4);
+// Bài 28
+const bai28_1 = require("./bai28");
+console.log("\n=== Bài 28: Generic Function identity ===");
+console.log("Identity số:", (0, bai28_1.identity)(42));
+console.log("Identity chuỗi:", (0, bai28_1.identity)("Xin chào"));
+console.log("Identity boolean:", (0, bai28_1.identity)(true));

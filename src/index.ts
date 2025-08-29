@@ -303,3 +303,12 @@ const pair4: KeyValuePair<string, boolean> = { key: "isAdmin", value: true };
 console.log("Cặp 1:", pair3);
 console.log("Cặp 2:", pair4);
 
+// Bài 28
+import { identity } from "./bai28";
+
+console.log("\n=== Bài 28: Generic Function identity ===");
+console.log("Identity số:", identity<number>(42));
+console.log("Identity chuỗi:", identity<string>("Xin chào"));
+console.log("Identity boolean:", identity<boolean>(true));
+
+
