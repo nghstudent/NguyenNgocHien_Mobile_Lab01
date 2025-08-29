@@ -1,4 +1,3 @@
-// bai19.ts
 export class Animal19 {
     makeSound(): void {
         console.log("Động vật phát ra âm thanh");

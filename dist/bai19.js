@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Cat19 = exports.Dog19 = exports.Animal19 = void 0;
-// bai19.ts
 class Animal19 {
     makeSound() {
         console.log("Động vật phát ra âm thanh");

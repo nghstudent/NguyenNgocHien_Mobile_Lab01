@@ -157,3 +157,12 @@ const bai19_1 = require("./bai19");
 console.log("\n=== Bài 19: Kế thừa ===");
 let animals = [new bai19_1.Dog19(), new bai19_1.Cat19()];
 animals.forEach(a => a.makeSound());
+// Bài 20
+const bai20_1 = require("./bai20");
+console.log("\n=== Bài 20: Interface Shape ===");
+const rect20 = new bai20_1.Rectangle20(4, 5);
+console.log("Diện tích hình chữ nhật:", rect20.area());
+console.log("Chu vi hình chữ nhật:", rect20.perimeter());
+const circle20 = new bai20_1.Circle20(3);
+console.log("Diện tích hình tròn:", circle20.area());
+console.log("Chu vi hình tròn:", circle20.perimeter());

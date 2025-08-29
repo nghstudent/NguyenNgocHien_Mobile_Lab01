@@ -188,3 +188,15 @@ import { Animal19, Dog19, Cat19 } from "./bai19";
 console.log("\n=== Bài 19: Kế thừa ===");
 let animals: Animal19[] = [new Dog19(), new Cat19()];
 animals.forEach(a => a.makeSound());
+
+// Bài 20
+import { Rectangle20, Circle20 } from "./bai20";
+
+console.log("\n=== Bài 20: Interface Shape ===");
+const rect20 = new Rectangle20(4, 5);
+console.log("Diện tích hình chữ nhật:", rect20.area());
+console.log("Chu vi hình chữ nhật:", rect20.perimeter());
+
+const circle20 = new Circle20(3);
+console.log("Diện tích hình tròn:", circle20.area());
+console.log("Chu vi hình tròn:", circle20.perimeter());
