@@ -126,6 +126,27 @@ console.log("Diện tích hình vuông:", square.area());
 const circle = new Circle(3);
 console.log("Diện tích hình tròn:", circle.area());
 
+//Bài 14
 import { runBai14 } from "./bai14"
 console.log("\n=== Bài 14: Employee, Manager, Developer ===");
 runBai14()
+
+// Bài 15
+import { Library } from "./bai15"
+
+console.log("\n=== Bài 15: Thư viện ===")
+const library = new Library()
+
+const book1 = new Book("Lập trình TypeScript", "Nguyễn Văn A", 2023)
+const book2 = new Book("Học OOP", "Trần Thị B", 2022)
+
+const user3 = new User("Ngọc Hiển")
+const user4 = new User("Minh Tuấn")
+
+library.addBook(book1)
+library.addBook(book2)
+library.addUser(user3)
+library.addUser(user4)
+
+library.showBooks()
+library.showUsers()

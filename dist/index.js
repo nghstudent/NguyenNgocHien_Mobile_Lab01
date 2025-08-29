@@ -112,6 +112,21 @@ const square = new bai13_1.Square(5);
 console.log("Diện tích hình vuông:", square.area());
 const circle = new bai13_1.Circle(3);
 console.log("Diện tích hình tròn:", circle.area());
+//Bài 14
 const bai14_1 = require("./bai14");
 console.log("\n=== Bài 14: Employee, Manager, Developer ===");
 (0, bai14_1.runBai14)();
+// Bài 15
+const bai15_1 = require("./bai15");
+console.log("\n=== Bài 15: Thư viện ===");
+const library = new bai15_1.Library();
+const book1 = new bai6_1.Book("Lập trình TypeScript", "Nguyễn Văn A", 2023);
+const book2 = new bai6_1.Book("Học OOP", "Trần Thị B", 2022);
+const user3 = new bai7_1.User("Ngọc Hiển");
+const user4 = new bai7_1.User("Minh Tuấn");
+library.addBook(book1);
+library.addBook(book2);
+library.addUser(user3);
+library.addUser(user4);
+library.showBooks();
+library.showUsers();
