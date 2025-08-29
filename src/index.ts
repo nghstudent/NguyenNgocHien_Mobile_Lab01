@@ -150,3 +150,13 @@ library.addUser(user4)
 
 library.showBooks()
 library.showUsers()
+
+// Bài 16
+import { Employee } from "./bai16"
+
+console.log("\n=== Bài 16: Nhân viên ===")
+const emp1 = new Employee("Nguyễn Văn A", "Lập trình viên", 20000000)
+const emp2 = new Employee("Trần Thị B", "Tester", 15000000)
+
+console.log(emp1.getInfo())
+console.log(emp2.getInfo())

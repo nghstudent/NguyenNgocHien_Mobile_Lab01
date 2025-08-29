@@ -130,3 +130,10 @@ library.addUser(user3);
 library.addUser(user4);
 library.showBooks();
 library.showUsers();
+// Bài 16
+const bai16_1 = require("./bai16");
+console.log("\n=== Bài 16: Nhân viên ===");
+const emp1 = new bai16_1.Employee("Nguyễn Văn A", "Lập trình viên", 20000000);
+const emp2 = new bai16_1.Employee("Trần Thị B", "Tester", 15000000);
+console.log(emp1.getInfo());
+console.log(emp2.getInfo());
