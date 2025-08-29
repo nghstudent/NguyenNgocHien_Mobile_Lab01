@@ -321,3 +321,20 @@ console.log("Cộng số:", myGenericNumber.add(10, 20));
 const myGenericString = new GenericNumber<string>("", (x, y) => x + y);
 console.log("Nối chuỗi:", myGenericString.add("Hello ", "World"));
 
+// Bài 30
+import { School, Student2, Teacher } from "./bai30";
+console.log("\n=== Bài 30: School, Student, Teacher ===");
+const school = new School("Trường A");
+
+const student1 = new Student2("Ngọc", 20, "A");
+const student2 = new Student2("Hiền", 21, "B");
+
+const teacher1 = new Teacher("Mr. Sơn", 35, "Toán");
+const teacher2 = new Teacher("Ms. Lan", 30, "Văn");
+
+school.addStudent(student1);
+school.addStudent(student2);
+school.addTeacher(teacher1);
+school.addTeacher(teacher2);
+
+school.displayInfo();

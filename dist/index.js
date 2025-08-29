@@ -254,3 +254,16 @@ const myGenericNumber = new bai29_1.GenericNumber(0, (x, y) => x + y);
 console.log("Cộng số:", myGenericNumber.add(10, 20));
 const myGenericString = new bai29_1.GenericNumber("", (x, y) => x + y);
 console.log("Nối chuỗi:", myGenericString.add("Hello ", "World"));
+// Bài 30
+const bai30_1 = require("./bai30");
+console.log("\n=== Bài 30: School, Student, Teacher ===");
+const school = new bai30_1.School("Trường A");
+const student1 = new bai30_1.Student2("Ngọc", 20, "A");
+const student2 = new bai30_1.Student2("Hiền", 21, "B");
+const teacher1 = new bai30_1.Teacher("Mr. Sơn", 35, "Toán");
+const teacher2 = new bai30_1.Teacher("Ms. Lan", 30, "Văn");
+school.addStudent(student1);
+school.addStudent(student2);
+school.addTeacher(teacher1);
+school.addTeacher(teacher2);
+school.displayInfo();
