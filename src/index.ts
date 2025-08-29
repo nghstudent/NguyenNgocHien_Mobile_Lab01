@@ -160,3 +160,15 @@ const emp2 = new Employee("Trần Thị B", "Tester", 15000000)
 
 console.log(emp1.getInfo())
 console.log(emp2.getInfo())
+
+// Bài 17
+import { Logger } from "./bai17";
+
+console.log("\n=== Bài 17: Logger (Singleton) ===");
+const logger1 = Logger.getInstance();
+const logger2 = Logger.getInstance();
+
+logger1.log("Xin chào, đây là logger 1");
+logger2.log("Xin chào, đây là logger 2");
+
+console.log("Hai logger có cùng tham chiếu không?", logger1 === logger2);

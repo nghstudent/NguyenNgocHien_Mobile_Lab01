@@ -137,3 +137,11 @@ const emp1 = new bai16_1.Employee("Nguyễn Văn A", "Lập trình viên", 20000
 const emp2 = new bai16_1.Employee("Trần Thị B", "Tester", 15000000);
 console.log(emp1.getInfo());
 console.log(emp2.getInfo());
+// Bài 17
+const bai17_1 = require("./bai17");
+console.log("\n=== Bài 17: Logger (Singleton) ===");
+const logger1 = bai17_1.Logger.getInstance();
+const logger2 = bai17_1.Logger.getInstance();
+logger1.log("Xin chào, đây là logger 1");
+logger2.log("Xin chào, đây là logger 2");
+console.log("Hai logger có cùng tham chiếu không?", logger1 === logger2);
