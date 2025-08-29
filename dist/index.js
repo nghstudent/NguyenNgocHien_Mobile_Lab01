@@ -173,3 +173,10 @@ const emp21 = new bai21_1.Employee21("Hùng", 8000);
 console.log(emp21.getInfo());
 const manager21 = new bai21_1.Manager21("Lan", 15000, "Kinh doanh");
 console.log(manager21.getInfo());
+// Bài 22
+const bai22_1 = require("./bai22");
+console.log("\n=== Bài 22: Vehicle, Car, Bike ===");
+const car22 = new bai22_1.Car22("Toyota", "Vios");
+car22.move();
+const bike22 = new bai22_1.Bike22("Martin");
+bike22.move();

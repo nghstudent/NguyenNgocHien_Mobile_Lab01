@@ -210,3 +210,13 @@ console.log(emp21.getInfo());
 
 const manager21 = new Manager21("Lan", 15000, "Kinh doanh");
 console.log(manager21.getInfo());
+
+// Bài 22
+import { Vehicle22, Car22, Bike22 } from "./bai22";
+
+console.log("\n=== Bài 22: Vehicle, Car, Bike ===");
+const car22 = new Car22("Toyota", "Vios");
+car22.move();
+
+const bike22 = new Bike22("Martin");
+bike22.move();
