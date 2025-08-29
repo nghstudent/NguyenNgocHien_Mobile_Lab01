@@ -105,3 +105,10 @@ const bird = new bai12_1.Bird("Chim");
 const fish = new bai12_1.Fish("Cá");
 bird.fly();
 fish.swim();
+// Bài 13: Shape
+const bai13_1 = require("./bai13");
+console.log("\n=== Bài 13: Shape ===");
+const square = new bai13_1.Square(5);
+console.log("Diện tích hình vuông:", square.area());
+const circle = new bai13_1.Circle(3);
+console.log("Diện tích hình tròn:", circle.area());

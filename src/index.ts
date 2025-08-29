@@ -116,3 +116,12 @@ const bird = new Bird("Chim");
 const fish = new Fish("Cá");
 bird.fly();
 fish.swim();
+
+// Bài 13: Shape
+import { Square, Circle } from './bai13';
+console.log("\n=== Bài 13: Shape ===");
+const square = new Square(5);
+console.log("Diện tích hình vuông:", square.area());
+
+const circle = new Circle(3);
+console.log("Diện tích hình tròn:", circle.area());
