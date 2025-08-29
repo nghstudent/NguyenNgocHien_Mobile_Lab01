@@ -220,3 +220,21 @@ car22.move();
 
 const bike22 = new Bike22("Martin");
 bike22.move();
+
+// Bài 23
+import { GenericStack } from "./bai23";
+
+console.log("\n=== Bài 23: Generic Stack ===");
+const numberStack = new GenericStack<number>();
+numberStack.push(10);
+numberStack.push(20);
+console.log("Phần tử trên cùng (số):", numberStack.peek());
+console.log("Pop:", numberStack.pop());
+console.log("Stack rỗng?", numberStack.isEmpty());
+
+const stringStack = new GenericStack<string>();
+stringStack.push("Xin chào");
+stringStack.push("TypeScript");
+console.log("Phần tử trên cùng (chuỗi):", stringStack.peek());
+console.log("Pop:", stringStack.pop());
+console.log("Stack rỗng?", stringStack.isEmpty());
