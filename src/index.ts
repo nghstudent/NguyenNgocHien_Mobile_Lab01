@@ -271,3 +271,25 @@ console.log("Phần tử trên cùng:", stringStack2.peek());
 console.log("Pop:", stringStack2.pop());
 console.log("Stack rỗng?", stringStack2.isEmpty());
 
+// Bài 26
+import { MyGenericQueue } from "./bai26";
+
+console.log("\n=== Bài 26: Generic Queue ===");
+const numberQueue = new MyGenericQueue<number>();
+numberQueue.enqueue(1);
+numberQueue.enqueue(2);
+numberQueue.enqueue(3);
+
+console.log("Phần tử đầu tiên:", numberQueue.peek());
+console.log("Dequeue:", numberQueue.dequeue());
+console.log("Queue rỗng?", numberQueue.isEmpty());
+
+const stringQueue = new MyGenericQueue<string>();
+stringQueue.enqueue("xin");
+stringQueue.enqueue("chào");
+stringQueue.enqueue("bạn");
+
+console.log("Phần tử đầu tiên:", stringQueue.peek());
+console.log("Dequeue:", stringQueue.dequeue());
+console.log("Queue rỗng?", stringQueue.isEmpty());
+
