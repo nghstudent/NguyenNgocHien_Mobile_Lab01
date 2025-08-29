@@ -200,3 +200,13 @@ console.log("Chu vi hình chữ nhật:", rect20.perimeter());
 const circle20 = new Circle20(3);
 console.log("Diện tích hình tròn:", circle20.area());
 console.log("Chu vi hình tròn:", circle20.perimeter());
+
+// Bài 21
+import { Employee21, Manager21 } from "./bai21";
+
+console.log("\n=== Bài 21: Employee & Manager ===");
+const emp21 = new Employee21("Hùng", 8000);
+console.log(emp21.getInfo());
+
+const manager21 = new Manager21("Lan", 15000, "Kinh doanh");
+console.log(manager21.getInfo());
