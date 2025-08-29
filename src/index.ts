@@ -181,3 +181,10 @@ console.log("Cộng:", MathUtil.add(10, 5));
 console.log("Trừ:", MathUtil.subtract(10, 5));
 console.log("Nhân:", MathUtil.multiply(10, 5));
 console.log("Chia:", MathUtil.divide(10, 5));
+
+// Bài 19
+import { Animal19, Dog19, Cat19 } from "./bai19";
+
+console.log("\n=== Bài 19: Kế thừa ===");
+let animals: Animal19[] = [new Dog19(), new Cat19()];
+animals.forEach(a => a.makeSound());

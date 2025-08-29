@@ -152,3 +152,8 @@ console.log("Cộng:", bai18_1.MathUtil.add(10, 5));
 console.log("Trừ:", bai18_1.MathUtil.subtract(10, 5));
 console.log("Nhân:", bai18_1.MathUtil.multiply(10, 5));
 console.log("Chia:", bai18_1.MathUtil.divide(10, 5));
+// Bài 19
+const bai19_1 = require("./bai19");
+console.log("\n=== Bài 19: Kế thừa ===");
+let animals = [new bai19_1.Dog19(), new bai19_1.Cat19()];
+animals.forEach(a => a.makeSound());
