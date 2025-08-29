@@ -195,3 +195,10 @@ stringStack.push("TypeScript");
 console.log("Phần tử trên cùng (chuỗi):", stringStack.peek());
 console.log("Pop:", stringStack.pop());
 console.log("Stack rỗng?", stringStack.isEmpty());
+// Bài 24
+const bai24_1 = require("./bai24");
+console.log("\n=== Bài 24: Generic Pair ===");
+const pair1 = new bai24_1.GenericPair("tuổi", 21);
+console.log("Key:", pair1.getKey(), "Value:", pair1.getValue());
+const pair2 = new bai24_1.GenericPair(1, "một");
+console.log("Key:", pair2.getKey(), "Value:", pair2.getValue());

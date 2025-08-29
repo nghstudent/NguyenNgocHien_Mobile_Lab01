@@ -238,3 +238,14 @@ stringStack.push("TypeScript");
 console.log("Phần tử trên cùng (chuỗi):", stringStack.peek());
 console.log("Pop:", stringStack.pop());
 console.log("Stack rỗng?", stringStack.isEmpty());
+
+// Bài 24
+import { GenericPair } from "./bai24";
+
+console.log("\n=== Bài 24: Generic Pair ===");
+const pair1 = new GenericPair<string, number>("tuổi", 21);
+console.log("Key:", pair1.getKey(), "Value:", pair1.getValue());
+
+const pair2 = new GenericPair<number, string>(1, "một");
+console.log("Key:", pair2.getKey(), "Value:", pair2.getValue());
+
