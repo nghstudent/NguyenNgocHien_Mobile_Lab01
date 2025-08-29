@@ -311,4 +311,13 @@ console.log("Identity số:", identity<number>(42));
 console.log("Identity chuỗi:", identity<string>("Xin chào"));
 console.log("Identity boolean:", identity<boolean>(true));
 
+// Bài 29
+import { GenericNumber } from "./bai29";
+
+console.log("\n=== Bài 29: Generic Class ===");
+const myGenericNumber = new GenericNumber<number>(0, (x, y) => x + y);
+console.log("Cộng số:", myGenericNumber.add(10, 20));
+
+const myGenericString = new GenericNumber<string>("", (x, y) => x + y);
+console.log("Nối chuỗi:", myGenericString.add("Hello ", "World"));
 

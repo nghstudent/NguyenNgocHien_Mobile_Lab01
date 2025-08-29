@@ -247,3 +247,10 @@ console.log("\n=== Bài 28: Generic Function identity ===");
 console.log("Identity số:", (0, bai28_1.identity)(42));
 console.log("Identity chuỗi:", (0, bai28_1.identity)("Xin chào"));
 console.log("Identity boolean:", (0, bai28_1.identity)(true));
+// Bài 29
+const bai29_1 = require("./bai29");
+console.log("\n=== Bài 29: Generic Class ===");
+const myGenericNumber = new bai29_1.GenericNumber(0, (x, y) => x + y);
+console.log("Cộng số:", myGenericNumber.add(10, 20));
+const myGenericString = new bai29_1.GenericNumber("", (x, y) => x + y);
+console.log("Nối chuỗi:", myGenericString.add("Hello ", "World"));
