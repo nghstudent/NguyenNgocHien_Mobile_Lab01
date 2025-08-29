@@ -145,3 +145,10 @@ const logger2 = bai17_1.Logger.getInstance();
 logger1.log("Xin chào, đây là logger 1");
 logger2.log("Xin chào, đây là logger 2");
 console.log("Hai logger có cùng tham chiếu không?", logger1 === logger2);
+// Bài 18
+const bai18_1 = require("./bai18");
+console.log("\n=== Bài 18: MathUtil (Static) ===");
+console.log("Cộng:", bai18_1.MathUtil.add(10, 5));
+console.log("Trừ:", bai18_1.MathUtil.subtract(10, 5));
+console.log("Nhân:", bai18_1.MathUtil.multiply(10, 5));
+console.log("Chia:", bai18_1.MathUtil.divide(10, 5));

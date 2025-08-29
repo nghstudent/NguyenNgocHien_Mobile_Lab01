@@ -172,3 +172,12 @@ logger1.log("Xin chào, đây là logger 1");
 logger2.log("Xin chào, đây là logger 2");
 
 console.log("Hai logger có cùng tham chiếu không?", logger1 === logger2);
+
+// Bài 18
+import { MathUtil } from "./bai18";
+
+console.log("\n=== Bài 18: MathUtil (Static) ===");
+console.log("Cộng:", MathUtil.add(10, 5));
+console.log("Trừ:", MathUtil.subtract(10, 5));
+console.log("Nhân:", MathUtil.multiply(10, 5));
+console.log("Chia:", MathUtil.divide(10, 5));
