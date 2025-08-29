@@ -125,3 +125,7 @@ console.log("Diện tích hình vuông:", square.area());
 
 const circle = new Circle(3);
 console.log("Diện tích hình tròn:", circle.area());
+
+import { runBai14 } from "./bai14"
+console.log("\n=== Bài 14: Employee, Manager, Developer ===");
+runBai14()

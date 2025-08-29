@@ -112,3 +112,6 @@ const square = new bai13_1.Square(5);
 console.log("Diện tích hình vuông:", square.area());
 const circle = new bai13_1.Circle(3);
 console.log("Diện tích hình tròn:", circle.area());
+const bai14_1 = require("./bai14");
+console.log("\n=== Bài 14: Employee, Manager, Developer ===");
+(0, bai14_1.runBai14)();
