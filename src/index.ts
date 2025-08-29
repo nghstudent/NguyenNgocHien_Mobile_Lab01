@@ -293,3 +293,13 @@ console.log("Phần tử đầu tiên:", stringQueue.peek());
 console.log("Dequeue:", stringQueue.dequeue());
 console.log("Queue rỗng?", stringQueue.isEmpty());
 
+// Bài 27
+import { KeyValuePair } from "./bai27";
+
+console.log("\n=== Bài 27: Interface Generic KeyValuePair ===");
+const pair3: KeyValuePair<number, string> = { key: 1, value: "Một" };
+const pair4: KeyValuePair<string, boolean> = { key: "isAdmin", value: true };
+
+console.log("Cặp 1:", pair3);
+console.log("Cặp 2:", pair4);
+

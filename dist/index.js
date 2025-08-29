@@ -236,3 +236,8 @@ stringQueue.enqueue("bạn");
 console.log("Phần tử đầu tiên:", stringQueue.peek());
 console.log("Dequeue:", stringQueue.dequeue());
 console.log("Queue rỗng?", stringQueue.isEmpty());
+console.log("\n=== Bài 27: Interface Generic KeyValuePair ===");
+const pair3 = { key: 1, value: "Một" };
+const pair4 = { key: "isAdmin", value: true };
+console.log("Cặp 1:", pair3);
+console.log("Cặp 2:", pair4);
