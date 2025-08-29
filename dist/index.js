@@ -98,3 +98,10 @@ const dog11 = new bai11_1.Dog("Chó");
 const cat11 = new bai11_1.Cat("Mèo");
 console.log(`${dog11.name} kêu: ${dog11.makeSound()}`);
 console.log(`${cat11.name} kêu: ${cat11.makeSound()}`);
+// Bài 12: Flyable và Swimmable
+const bai12_1 = require("./bai12");
+console.log("\n=== Bài 12: Flyable và Swimmable ===");
+const bird = new bai12_1.Bird("Chim");
+const fish = new bai12_1.Fish("Cá");
+bird.fly();
+fish.swim();

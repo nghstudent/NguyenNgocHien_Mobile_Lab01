@@ -109,3 +109,10 @@ const cat11 = new Cat11("Mèo");
 console.log(`${dog11.name} kêu: ${dog11.makeSound()}`);
 console.log(`${cat11.name} kêu: ${cat11.makeSound()}`);
 
+// Bài 12: Flyable và Swimmable
+import { Flyable, Swimmable, Bird, Fish } from './bai12';
+console.log("\n=== Bài 12: Flyable và Swimmable ===");
+const bird = new Bird("Chim");
+const fish = new Fish("Cá");
+bird.fly();
+fish.swim();
